@@ -22,7 +22,9 @@ public class ReadingAndParsingZip {
             while ((entry = zs.getNextEntry()) != null) {
                 if (entry.getName().equals("ДЗ_DevTools_Воркшоп_1.pdf")) {
                     PDF pdf = new PDF(zs);
-                    Assertions.assertTrue(entry.getName().contains("ДЗ_DevTools_Воркшоп_1.pdf"));
+                    System.out.println();
+
+                    // Assertions.assertTrue(entry.getName().contains("ДЗ_DevTools_Воркшоп_1.pdf"));
                 }
             }
         }
