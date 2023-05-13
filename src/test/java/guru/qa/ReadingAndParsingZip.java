@@ -16,13 +16,14 @@ public class ReadingAndParsingZip {
     @Test
     @DisplayName("Чтение PDF из архива zip")
     void testPDF() throws Exception {
-        try (InputStream is = cl.getResourceAsStream("HW10.zip");
+        try (InputStream is = cl.getResourceAsStream("HomeWork.zip");
              ZipInputStream zs = new ZipInputStream(is)) {
             ZipEntry entry;
             while ((entry = zs.getNextEntry()) != null) {
-                if (entry.getName().equals("ДЗ_DevTools_Воркшоп_1.pdf")) {
+                if (entry.getName().equals("HW.pdf")) {
                     PDF pdf = new PDF(zs);
                     System.out.println();
+
 
                     // Assertions.assertTrue(entry.getName().contains("ДЗ_DevTools_Воркшоп_1.pdf"));
                 }
