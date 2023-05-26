@@ -1,3 +1,9 @@
 {
-
+  "title": "Mortal Kombat",
+  "genre": "fighting",
+  "release": 1992,
+  "retro": true,
+  "developers": ["Midway Games", "NetherRealm Studios"],
+  "designers": ["Ed Boon", "John Tobias"],
+  "fighters": ["Scorpion", "Sub-Zero", "Liu Kang", "Sonya", "Kitana", "Shan Tsung"]
 }
